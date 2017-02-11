@@ -1,0 +1,119 @@
+#container{
+	float: left;
+	width: 90%;
+	margin: 1% 5% 1% 5%;
+	padding: 0%;
+}
+
+#header{
+	float: left;
+	width: 100%;
+	background-color: #000;
+	color: #FFF;
+	text-align: center;
+	margin-bottom: 1%;
+	padding: 2% 0% 2% 0%;
+	background-image: url("images/logo.png");
+	background-size: 11%;
+	background-repeat: no-repeat;
+	background-position: 20% 40%;
+	padding-bottom: 2%;
+}
+
+#title_logo{
+	padding-top: .5%;
+	width: 50%;
+	float: left;
+}
+
+h1, h3, p{
+	margin: 0%;
+}
+
+#social_media{
+	float: right;
+	width: 50%;
+}
+
+#content{
+	color: #222;
+	float: left;
+	width: 100%;
+}
+
+#nav_site{
+	margin-bottom: 1%;
+}
+
+#nav_site ul, #social_media ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#nav_site li, #social_media li{
+    float: left;
+}
+
+#nav_site li:last-child{
+    border-right: none;
+}
+
+#nav_site li a, #social_media li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav_site li a:hover:not(#active), #social_media li a:hover:not(#active){
+    background-color: #000;
+}
+
+#nav_site #active, #social_media #active{
+    background-color: #4CAF50;
+}
+
+#connect_banner{
+	display: block;
+    color: white;
+	font-weight: bold;
+    text-align: center;
+    padding: 4% 5%;
+    text-decoration: none;
+}
+
+
+#main{
+	padding: 2% 3% 2% 3%; 
+	background-color: #EEE;
+	margin-bottom: 1%;
+	float: left;
+	text-align: justify;
+	width: 94%;
+}
+
+#footer{
+	width: 100%;
+	margin-bottom: 1%;
+	float: left;
+	text-align: center;
+}
+
+hr{
+	color: #000;
+	margin-bottom: 2%;
+	width: 100%;
+}
+
+a{
+	outline: 0;
+	text-decoration: none;
+}
+
+#title_logo img{
+	
+}
