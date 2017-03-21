@@ -87,6 +87,9 @@ h1, h3, p{
     text-decoration: none;
 }
 
+#nav_site li a{
+	padding: 14px 30px;
+}
 #nav_site #active, #social_media #active{
     background-color: #4CAF50;
 }
