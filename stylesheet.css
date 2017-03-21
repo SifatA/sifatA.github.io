@@ -3,7 +3,7 @@ body {
 }
 
 #main{
-	height: 320px;
+	height: 350px;
 	overflow-y: auto;
 }
 
@@ -105,9 +105,9 @@ h1, h3, p{
 
 
 #main{
-	padding: 2% 0% 2% 0%; 
+	padding: 2% 0% 0% 0%; 
 	background-color: #EEE;
-	margin-bottom: 1%;
+	margin-bottom: 0.5%;
 	float: left;
 	text-align: justify;
 	width: 100%;
