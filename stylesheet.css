@@ -1,10 +1,6 @@
 body {
-    overflow-y: hidden;
-}
-
-#main{
-	height: 350px;
-	overflow-y: auto;
+	margin: 0;
+	overflow-x: hidden
 }
 
 #container{
@@ -14,29 +10,43 @@ body {
 	padding: 0%;
 }
 
+
+
 #header{
 	float: left;
 	width: 100%;
+	height:100%;
 	background-color: #000;
 	color: #FFF;
 	text-align: center;
-	margin-bottom: 1%;
 	padding: 2% 0% 2% 0%;
 	background-image: url("images/logo_web.png");
 	background-size: 11%;
 	background-repeat: no-repeat;
 	background-position: 20% 42%;
-	padding-bottom: 2%;
 /* 	text-shadow:
 		-1px -1px 0 #000,  
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000; */
-
 }
 
-h1 {
-	}
+#content{
+	color: #222;
+	float: left;
+	width: 100%;
+}
+
+
+#footer{
+	text-align: center;
+	float: left;
+	width: 100%;
+}
+
+
+
+
 
 #title_logo{
 	padding-top: .5%;
@@ -53,17 +63,9 @@ h1, h3, p{
 	width: 50%;
 }
 
-#content{
-	color: #222;
-	float: left;
-	width: 100%;
-}
 
-#nav_site{
-	margin-bottom: 1%;
-}
 
-#nav_site ul, #social_media ul {
+#social_media ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -71,15 +73,12 @@ h1, h3, p{
     background-color: #000;
 }
 
-#nav_site li, #social_media li{
+#social_media li{
     float: left;
 }
 
-#nav_site li:last-child{
-    border-right: none;
-}
 
-#nav_site li a, #social_media li a{
+#social_media li a{
     display: block;
     color: white;
     text-align: center;
@@ -87,10 +86,7 @@ h1, h3, p{
     text-decoration: none;
 }
 
-#nav_site li a{
-	padding: 14px 30px;
-}
-#nav_site #active, #social_media #active{
+#social_media #active{
     background-color: #4CAF50;
 }
 
@@ -103,14 +99,14 @@ h1, h3, p{
     text-decoration: none;
 }
 
-
 #main{
-	padding: 2% 0% 0% 0%; 
+	padding: 1% 0% 0% 0%; 
 	background-color: #EEE;
 	margin-bottom: 0.5%;
 	float: left;
 	text-align: justify;
 	width: 100%;
+	overflow-y: auto;
 }
 
 #about_section{
@@ -120,17 +116,13 @@ h1, h3, p{
 	float: left;
 }
 
-#footer{
-	width: 100%;
-	float: left;
-	text-align: center;
-}
-
+/*
 hr{
 	color: #000;
 	margin-bottom: 2%;
 	width: 100%;
 }
+*/
 
 a{
 	outline: 0;
@@ -139,4 +131,121 @@ a{
 
 #title_logo img{
 	
+}
+
+.slideshow_container {
+	margin-top: 1%;
+	background: black;
+	background-color: #000;
+	float: left;
+	width: 100%;
+	
+}
+
+
+.mySlides {
+	display:none;
+
+}
+
+.slideimg {
+	width: 40%;
+	float: left;
+	padding: 0;
+	text-align: center;
+
+}
+
+.mySlides img{
+	height: 300px;
+	margin: 0;
+}
+
+.text {
+	color: #FFF;
+	font-size: 15px;
+	float:right;
+	text-align: justify;
+	width: 45%;
+	font-weight: bold;
+	padding-right: 10%;
+	padding-top: 5%;
+}
+
+
+.prev, .next {
+	z-index: 10;
+	cursor: pointer;
+	position: absolute;
+	width: auto;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	top:80%
+}
+
+
+.next {
+	right:5%;
+}
+.prev {
+	left:5%;
+}
+
+
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 8px 12px;
+	position: relative;
+	top: 300px;
+	text-align: center;
+}
+
+#dots {
+	position: absolute;
+    z-index: 10;
+	float:left;
+	width:100%;
+}
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
